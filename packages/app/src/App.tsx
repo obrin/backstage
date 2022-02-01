@@ -87,6 +87,7 @@ import * as plugins from './plugins';
 import { techDocsPage } from './components/techdocs/TechDocsPage';
 import { ApacheAirflowPage } from '@backstage/plugin-apache-airflow';
 import { AggregateEntitiesPage } from 'plugin-aggregate-entities';
+import { OverviewPage } from 'plugin-overview';
 
 const app = createApp({
   apis,
@@ -217,6 +218,7 @@ const routes = (
     <Route path="/azure-pull-requests" element={<AzurePullRequestsPage />} />
     <Route path="/apache-airflow" element={<ApacheAirflowPage />} />
     <Route path="/aggregate-entities" element={<AggregateEntitiesPage />} />
+    <Route path="/overview" element={<OverviewPage />} />
   </FlatRoutes>
 );
 
